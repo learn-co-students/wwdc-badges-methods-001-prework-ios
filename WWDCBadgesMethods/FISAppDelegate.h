@@ -18,4 +18,9 @@
  
  */
 
+- (NSString *)badgeForSpeaker:(NSString *)speakers;
+- (NSMutableArray *)badgesForSpeakers:(NSArray *)speakers;
+- (NSMutableArray *)greetingsAndRoomAssignmentsForSpeakers:(NSArray *)speakers;
+
+
 @end
