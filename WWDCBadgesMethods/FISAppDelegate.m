@@ -7,6 +7,7 @@
 //
 
 #import "FISAppDelegate.h"
+#define ONE 1
 
 @implementation FISAppDelegate
 
@@ -24,17 +25,19 @@
 - (NSArray *) badgesForSpeakers:(NSArray *)speakers{
     NSMutableArray *badges = [[NSMutableArray alloc] init];
     for (NSUInteger i = 0; i < [speakers count]; i++) {
-        badges[i] = [self badgeForSpeaker:speakers[i]];
-    }
+        //badges[i] = [self badgeForSpeaker:speakers[i]];
+        badges[i] = [@"Hello, my name is" mutableCopy];
+        [badges[i] appendFormat:@" %@.",speakers[i]];
+        }
     return badges;
     }
 
 - (NSArray *) greetingsAndRoomAssignmentsForSpeakers:(NSArray *)speakers{
     NSMutableArray *greetings = [[NSMutableArray alloc]init];
+    
     for (NSUInteger i = 0; i < [speakers count]; i++) {
-        [greetings[i] appendFormat:@"Welcome, %@! ",speakers[i]];
-        NSInteger j = i + 1;
-        [greetings[i] appendFormat:@"You'll be in dressing room %ld.",(long)j];
+        greetings[i] = [@"Welcome," mutableCopy];
+[greetings[i] appendFormat:@" %@! You'll be in dressing room %ld.",speakers[i],i+ONE];
         }
     return greetings;
     }
