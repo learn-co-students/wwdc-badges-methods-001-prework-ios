@@ -23,10 +23,13 @@
  */
 
     
-- (NSString *)badgeForSpeakers:(NSString *)speaker; { //noun singular form
+- (NSMutableArray *)badgeForSpeakers:(NSString *)speaker; { //noun singular form
     //return nil;
-    NSString *result = [NSString stringWithFormat:@"Hello, my name is %@." , speaker]; // string result, appended
-    return result;
+    NSMutableArray*speakers=[[NSMutableArray alloc]init];
+    for(NSUInteger i=0; i< [speakers count]; i++){
+        NSLog(@"Hello, my name is %@.", speakers[i]);
+}
+    return speakers;
     }
 - (NSMutableArray *)badgesForSpeakers:(NSArray *)speakers; {
    //return nil;
