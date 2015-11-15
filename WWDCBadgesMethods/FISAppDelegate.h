@@ -18,4 +18,8 @@
  
  */
 
-@end
+- (NSString *)badgeForSpeakers:(NSString *)speaker; //noun singular form
+- (NSMutableArray *)badgesForSpeakers:(NSArray *)speakers; // noun plural form
+- (NSMutableArray *)greetingsAndRoomAssignmentsForSpeakers:(NSArray *)speakers; // noun plural form
+
+@end;
