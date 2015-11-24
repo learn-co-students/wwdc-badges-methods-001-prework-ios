@@ -12,8 +12,17 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
-- (NSString *)badgeForSpeaker:(NSString *)speaker;
-- (NSArray *)badgesForSpeakers:(NSArray *)speakers;
-- (NSArray *)greetingsAndRoomAssignmentsForSpeakers:(NSArray *)speakers;
+/*Instance methods
+ - instance method indicator
+ () return type
+ * object variables have it
+ method name:argument
+ */
+
+- (NSString *)badgeForSpeaker:(NSString *)speaker; //accepts one NSString argument named speaker and returns an NSString
+
+- (NSArray *)badgesForSpeakers:(NSArray *)speakers; //accepts one NSArray argument named speakers and returns an NSArray
+
+- (NSArray *)greetingsAndRoomAssignmentsForSpeakers:(NSArray *)speakers; //accepts one NSArray argument named speakers and returns an NSArray
 
 @end
