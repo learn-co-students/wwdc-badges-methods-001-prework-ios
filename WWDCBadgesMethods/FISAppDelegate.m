@@ -32,22 +32,47 @@
     
     return allSpeakersIntro;
    
+    
 }
 
-- (NSArray *) greetingsAndRoomAssignmentsForSpeakers:(NSArray *)speakers {
-    NSMutableArray *hellosAndRoomNums = [speakers mutableCopy];
-    NSUInteger numOfSpeakers = [speakers count];
-    for (NSUInteger i = 0; i < numOfSpeakers; i++) {
-        NSUInteger roomAssignment = i + 1;
-        
-    return hellosAndRoomNums[i]= [NSString stringWithFormat:@"Welcome, %@! You'll be in dressingroom %lu.", speakers[i], roomAssignment];
-        
+- (NSArray *) greetingsAndRoomAssignmentsForSpeakers:(NSArray *)speakers{
+    NSMutableArray *hellosAndRoom = [[NSMutableArray alloc] init];
+    for (NSUInteger i =0; i< [speakers count]; i++) {
+        NSMutableString *hellosAndRoomString = [@"Welcome, " mutableCopy];
+        [hellosAndRoomString appendFormat:@"%@! You'll be in dressing room %lu.", speakers[i], i+1];
+        hellosAndRoom[i] = hellosAndRoomString;
     }
-    
-    return hellosAndRoomNums;
-    
+    return hellosAndRoom;
 }
+//trial 1=
+//- (NSArray *) greetingsAndRoomAssignmentsForSpeakers:(NSArray *)speakers{
+ //   NSMutableArray *speakerList = [speakers mutableCopy];
+  //  for (NSUInteger i = 0; i < [speakerList count]; i++) {
+    //    NSString *intro = @"Welcome %@!", *speakerList;
+     //   NSString *roomAssignment = @"You'll be in dressing room %lu.",  *i; + 1;
+         // NSString *fullIntroAndRoom = [alloc[init]];
+    //  NSString  *fullIntroAndRoom = [intro stringByAppendingString:roomAssignment];
 
+    //}
+   // return fullIntroAndRoom;
 
+//}trial 2=
 
+//- (NSArray *) greetingsAndRoomAssignmentsForSpeakers:(NSArray *)speakers {
+//    NSMutableArray *hellosAndRoomNums = [speakers mutableCopy];
+//    NSUInteger numOfSpeakers = [speakers count];
+//    for (NSUInteger i = 0; i < numOfSpeakers; i++) {
+//        NSUInteger roomAssignment = i + 1;
+//        
+//        hellosAndRoomNums = [NSString stringWithFormat:@"Welcome, %@! You'll be in dressingroom %lu.",speakers, roomAssignment];
+
+//    }
+    
+    
+  //  return hellosAndRoomNums ;
+   
+    
+//}
+
+                      
 @end
