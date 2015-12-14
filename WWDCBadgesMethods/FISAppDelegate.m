@@ -21,4 +21,25 @@
  
  */
 
+- (NSString *)badgeForSpeaker:(NSString *)speaker
+{
+    NSString *badge = [NSString stringWithFormat:@"Hello, my name is %@.", speaker];
+    return badge;
+}
+
+- (NSArray *)badgesForSpeakers:(NSArray *)speakers
+{
+    NSMutableArray *badges = [[NSMutableArray alloc] init];
+    for (NSUInteger i = 0; i < [speakers count]; i++) {
+        NSString *badge = [self badgeForSpeaker:speakers[i]];
+        [badges addObject:badge];
+    }
+    return badges;
+}
+
+- (NSArray *)greetingsAndRoomAssignmentsForSpeakers:(NSArray *)speakers
+{
+    return nil;
+}
+
 @end
