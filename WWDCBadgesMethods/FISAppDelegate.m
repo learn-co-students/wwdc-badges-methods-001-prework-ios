@@ -12,6 +12,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    NSArray *speakers=@[@"Adele Goldberg", @"Edsger Dijkstra", @"Joan Clarke", @"Clarence Ellis", @"Margaret Hamilton", @"George Boole", @"Tim Berners-Lee", @"Jean Bartik"];
+    NSArray *letsGo=[self greetingsAndRoomAssignmentsForSpeakers:speakers];
+    NSLog(@"%@", letsGo);
 
     
     return YES;
