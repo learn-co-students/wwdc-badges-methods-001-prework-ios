@@ -15,12 +15,14 @@
     return YES;
 }
 
-- (NSString *) badgeForSpeaker:(NSString *)speaker {
-    NSString *enterSpeaker = [NSString stringWithFormat: @"Hello, my name is %@.", speaker];
-    
-    return enterSpeaker;
 
-}
+
+//- (NSString *) badgeForSpeaker:(NSString *)speaker {
+//    NSString *enterSpeaker = [NSString stringWithFormat: @"Hello, my name is %@.", speaker];
+//    
+//    return enterSpeaker;
+
+//}
 
 
 - (NSArray *) badgesForSpeakers: (NSArray *) speakers {
@@ -34,7 +36,7 @@
    
     
 }
-
+//ver.3
 - (NSArray *) greetingsAndRoomAssignmentsForSpeakers:(NSArray *)speakers{
     NSMutableArray *hellosAndRoom = [[NSMutableArray alloc] init];
     for (NSUInteger i =0; i< [speakers count]; i++) {
@@ -44,7 +46,7 @@
     }
     return hellosAndRoom;
 }
-//trial 1=
+//ver.1
 //- (NSArray *) greetingsAndRoomAssignmentsForSpeakers:(NSArray *)speakers{
  //   NSMutableArray *speakerList = [speakers mutableCopy];
   //  for (NSUInteger i = 0; i < [speakerList count]; i++) {
@@ -56,8 +58,8 @@
     //}
    // return fullIntroAndRoom;
 
-//}trial 2=
-
+//}ver.2
+//
 //- (NSArray *) greetingsAndRoomAssignmentsForSpeakers:(NSArray *)speakers {
 //    NSMutableArray *hellosAndRoomNums = [speakers mutableCopy];
 //    NSUInteger numOfSpeakers = [speakers count];
@@ -65,13 +67,13 @@
 //        NSUInteger roomAssignment = i + 1;
 //        
 //        hellosAndRoomNums = [NSString stringWithFormat:@"Welcome, %@! You'll be in dressingroom %lu.",speakers, roomAssignment];
-
+//
 //    }
-    
-    
-  //  return hellosAndRoomNums ;
-   
-    
+//    
+//    
+//    return hellosAndRoomNums ;
+//   
+//    
 //}
 
                       

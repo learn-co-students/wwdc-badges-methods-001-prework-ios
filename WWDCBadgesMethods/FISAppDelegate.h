@@ -12,11 +12,17 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
-- (NSString *) badgeForSpeaker: (NSString *)speaker;
+// VERSION UNO ^_^
+//- (NSString *) badgeForSpeaker: (NSString *)speaker;
+//
+//- (NSArray *) badgesForSpeakers: (NSArray *)speakers;
+//
+//- (NSArray *) greetingsAndRoomAssignmentsForSpeakers: (NSArray *)speakers;
 
-- (NSArray *) badgesForSpeakers: (NSArray *)speakers;
 
-- (NSArray *) greetingsAndRoomAssignmentsForSpeakers: (NSArray *)speakers;
-
+//VERSION DOS
+-(NSString *)badgeForSpeaker: (NSString *)speaker;
+-(NSArray *)badgesForSpeakers: (NSArray *) speakers;
+-(NSArray *)greetingsAndRoomAssignmentsForSpeakers: (NSArray *)speakers;
 
 @end
