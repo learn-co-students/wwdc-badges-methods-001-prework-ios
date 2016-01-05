@@ -31,7 +31,11 @@
 
 - (NSArray *)greetingsAndRoomAssignmentsForSpeakers:(NSArray *)speakers {
     
-    return nil;
+    NSMutableArray *greetingsAndRoomAssignments = [NSMutableArray array];
+    for (int i = 0; i < [speakers count]; i++) {
+        [greetingsAndRoomAssignments addObject:[NSString stringWithFormat:@"Welcome, %@! You'll be in dressing room %i.", speakers[i], i+1]];
+    }
+    return greetingsAndRoomAssignments;
 }
 
 @end
