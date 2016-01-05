@@ -17,7 +17,7 @@
 
 - (NSString *)badgeForSpeaker:(NSString *)speaker {
     
-    return nil;
+    return [NSString stringWithFormat:@"Hello, my name is %@.", speaker];
 }
 
 - (NSArray *)badgesForSpeakers:(NSArray *)speakers {
