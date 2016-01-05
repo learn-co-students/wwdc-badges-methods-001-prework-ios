@@ -22,7 +22,11 @@
 
 - (NSArray *)badgesForSpeakers:(NSArray *)speakers {
     
-    return nil;
+    NSMutableArray *badges = [NSMutableArray array];
+    for (int i = 0; i < [speakers count]; i++) {
+        [badges addObject:[self badgeForSpeaker:speakers[i]]];
+    }
+    return badges;
 }
 
 - (NSArray *)greetingsAndRoomAssignmentsForSpeakers:(NSArray *)speakers {
