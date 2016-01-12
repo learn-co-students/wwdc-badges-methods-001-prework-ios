@@ -12,12 +12,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    //NSArray *conferenceSpeakers = @[@"Adele Goldberg", @"Edsger Dijkstra", @"Joan Clarke", @"Clarence Ellis", @"Margaret Hamilton", @"George Boole", @"Tim Berners-Lee", @"Jean Bartik"];
-    //for(NSInteger i = 0; i < [conferenceSpeakers count]; i++){
-    //    NSLog(@ "Hello, my name is %@.", conferenceSpeakers[i]);
-    //}
-
-    
     return YES;
 }
 
