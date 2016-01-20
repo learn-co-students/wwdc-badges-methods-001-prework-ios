@@ -15,6 +15,27 @@
     return YES;
 }
 
+
+-(NSString*)badgeForSpeaker:(NSString*)speaker
+{
+
+
+
+    return speaker;
+}
+-(NSArray*)badgesForSpeakers:(NSArray*)speakers
+{
+
+
+    return speakers;
+}
+
+-(NSArray*)greetingsAndRoomAssignmentsForSpeakers:(NSArray*)speakers
+{
+
+    return speakers;
+}
+
 /*
  
  * Define your methods between application:didFinishLaunchingWithOptions and the @end marker
