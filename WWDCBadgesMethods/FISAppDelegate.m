@@ -44,6 +44,16 @@
 }
 
 - (NSArray *)greetingsAndRoomAssignmentsForSpeakers:(NSArray *)speakers {
-    return nil;
+
+    NSMutableArray *greetingsAndAssignment = [[NSMutableArray alloc]init];
+    
+    for (NSUInteger i = 0; i < [speakers count]; i++) {
+        NSString *speaker = [speakers objectAtIndex:i];
+        NSUInteger roomNumber = i + 1;
+        NSString *fullStatement = [NSString stringWithFormat:@"Welcome, %@! You'll be in dressing room %lu.", speaker, (unsigned long)roomNumber];
+        [greetingsAndAssignment addObject:fullStatement];
+        
+    }
+    return greetingsAndAssignment;
 }
 @end
