@@ -12,8 +12,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
  
-    NSString *speaker = @"Inigo Montoya";
-    NSLog(@"Hello, my name is %@.", speaker);
+//    NSString *speaker = @"Inigo Montoya";
+//    NSLog(@"Hello, my name is %@.", speaker);
 
     
 
@@ -51,7 +51,19 @@ return helloMyNameIs;
 }
 
 -(NSArray *) greetingsAndRoomAssignmentsForSpeakers:(NSArray *)speakers {
-    return nil;
+    
+    NSMutableArray *greetingArray = [[NSMutableArray alloc] init];
+ 
+    for (NSUInteger i = 0; i < [speakers count]; i++) {
+        
+        NSString *greeting = [NSString stringWithFormat: @"Welcome, %@! You'll be in dressing room %lu.", speakers[i], i + 1];
+        [greetingArray addObject:greeting];
+        
+        
+    }
+
+    return greetingArray;
+  
 }
 
 
