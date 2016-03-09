@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "8444AC5187AA5CDD1CCFA370E8295D411BB56C21",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "8444AC5187AA5CDD1CCFA370E8295D411BB56C21" : 0,
+    "8249E415C0975FFB5C73E01C9BBCC1E21BAC46BF" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C9D4FE9B-DCBE-45E7-BE85-D2D082116329",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "8444AC5187AA5CDD1CCFA370E8295D411BB56C21" : "wwdc-badges-methods-001-prework-ios\/",
+    "8249E415C0975FFB5C73E01C9BBCC1E21BAC46BF" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "WWDCBadgesMethods",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "WWDCBadgesMethods.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:mvargas2193\/learnerrors.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8249E415C0975FFB5C73E01C9BBCC1E21BAC46BF"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:mvargas2193\/wwdc-badges-methods-001-prework-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8444AC5187AA5CDD1CCFA370E8295D411BB56C21"
+    }
+  ]
+}
