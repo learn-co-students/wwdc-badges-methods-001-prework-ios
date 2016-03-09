@@ -12,10 +12,17 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
-/*
- 
- * Declare your custom methods in this space. Don't forget to end the statements with semicolons ";" !
- 
+/*Instance methods
+ - instance method indicator
+ () return type
+ * object variables have it
+ method name:argument
  */
+
+- (NSString *)badgeForSpeaker:(NSString *)speaker; //accepts one NSString argument named speaker and returns an NSString
+
+- (NSArray *)badgesForSpeakers:(NSArray *)speakers; //accepts one NSArray argument named speakers and returns an NSArray
+
+- (NSArray *)greetingsAndRoomAssignmentsForSpeakers:(NSArray *)speakers; //accepts one NSArray argument named speakers and returns an NSArray
 
 @end
