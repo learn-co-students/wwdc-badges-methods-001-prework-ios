@@ -12,7 +12,39 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    NSArray *speakers=@[@"Adele Goldberg", @"Edsger Dijkstra", @"Joan Clarke", @"Clarence Ellis", @"Margaret Hamilton", @"George Boole", @"Tim Berners-Lee", @"Jean Bartik"];
+    NSArray *letsGo=[self greetingsAndRoomAssignmentsForSpeakers:speakers];
+    NSLog(@"%@", letsGo);
+
+    
     return YES;
+}
+
+
+-(NSString*)badgeForSpeaker:(NSString*)speaker;{
+    NSMutableString *hello= [@"Hello, my name is" mutableCopy];
+    [hello appendFormat:@" %@.", speaker];
+    return hello;
+        
+    }
+   
+
+-(NSArray*)badgesForSpeakers:(NSArray *)speakers {
+    NSMutableArray *helloArray = [[NSMutableArray alloc] init];
+    for (NSUInteger i=0; i<[speakers count];i++) {
+        helloArray[i]=[self badgeForSpeaker:speakers[i]];
+    }
+    return helloArray;
+}
+
+-(NSMutableArray*)greetingsAndRoomAssignmentsForSpeakers:(NSArray *)speakers {
+    NSMutableArray*greetingsandRoomArray= [[NSMutableArray alloc] init];
+    for (NSUInteger i=0; i<[speakers count]; i++) {
+    NSMutableString *greetingsAndRoomsString= [@"Welcome, " mutableCopy];
+        [greetingsAndRoomsString appendFormat:@"%@! You'll be in dressing room %lu.", speakers[i], i+1];
+        greetingsandRoomArray[i]=greetingsAndRoomsString;
+    }
+    return greetingsandRoomArray;
 }
 
 /*
