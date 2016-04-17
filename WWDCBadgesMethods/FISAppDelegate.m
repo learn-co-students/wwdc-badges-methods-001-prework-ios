@@ -17,8 +17,7 @@
 
 - (NSString *)badgeForSpeaker: (NSString *)speaker {
     
-    NSMutableString *badge = [@"Hello, my name is" mutableCopy];
-    [badge appendFormat:@" %@.", speaker];
+    NSString *badge = [NSString stringWithFormat:@"Hello, my name is %@.", speaker];
     
     return badge;
 }
@@ -29,8 +28,7 @@
     
     for (NSUInteger i = 0; i < [speakers count]; i++) {
         
-        NSString *specificSpeaker = speakers[i];
-        NSString *specificBadge = [self badgeForSpeaker:specificSpeaker];
+        NSString *specificBadge = [self badgeForSpeaker:speakers[i]];
         [badges addObject:specificBadge];
         
     }
@@ -45,8 +43,7 @@
     for (NSUInteger i = 0; i < [speakers count]; i++) {
         
         NSUInteger roomAssignment = i + 1;
-        NSString *specificSpeaker = speakers[i];
-        NSString *specificGreeting = [NSString stringWithFormat:@"Welcome, %@! You'll be in dressing room %lu.", specificSpeaker, roomAssignment];
+        NSString *specificGreeting = [NSString stringWithFormat:@"Welcome, %@! You'll be in dressing room %lu.", speakers[i], roomAssignment];
         [greetingsAndRoomAssignments addObject:specificGreeting];
         
     }
