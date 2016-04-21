@@ -64,7 +64,7 @@
     
     
     for (NSUInteger i=0; i < [speakers count]; i++) {
-        NSString *newGreeting = [NSString stringWithFormat:@"Welcome, %@! You'll be in dressing room %li.", speakers[i], i+1];
+        NSString *newGreeting = [NSString stringWithFormat:@"Welcome, %@! You'll be in dressing room %lu.", speakers[i], i+1];
         [badgesWithNamesAndRooms addObject: newGreeting];
     }
     
