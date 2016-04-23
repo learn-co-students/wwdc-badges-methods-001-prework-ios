@@ -10,6 +10,14 @@
 
 @implementation FISAppDelegate
 
+// Objectives:
+// 1. Write custom methods to solve a few simple problems.
+// 2. Call your methods to get the results that you need.
+// 3. Run the tests to check your work.
+
+// Advanced:
+// 1. Utilize your badgeForSpeaker: method by calling it on self and supplying it with an argument string pulled from the speakers array.
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     return YES;
