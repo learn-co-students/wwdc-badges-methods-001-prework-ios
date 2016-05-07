@@ -10,6 +10,10 @@
 
 @interface FISAppDelegate : UIResponder <UIApplicationDelegate>
 
+- (NSString *) badgeForSpeaker: (NSString *) speaker;
+- (NSArray *) badgesForSpeakers: (NSArray *) speakers;
+- (NSArray *) greetingsAndRoomAssignmentsForSpeakers: (NSArray *) speakers;
+
 @property (strong, nonatomic) UIWindow *window;
 
 /*
