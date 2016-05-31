@@ -17,7 +17,7 @@
 
 - (NSArray *)badgesForSpeakers:(NSArray *)speakers {
     
-    NSMutableArray *badges = [[NSMutableArray alloc] init];
+    NSMutableArray *badges = [[NSMutableArray alloc]init];
     
     for (NSString *speaker in speakers) {
         
@@ -32,22 +32,19 @@
 - (NSString *)badgeForSpeaker:(NSString *)speaker {
     
     NSString *badge = @"Hello, my name is ";
-    
     return [badge stringByAppendingFormat:@"%@.",speaker];
 }
 
 
 - (NSArray *)greetingsAndRoomAssignmentsForSpeakers:(NSArray *)speakers {
     
-    NSMutableArray *greetingsAndRooms = [[NSMutableArray alloc] init];
+    NSMutableArray *greetingsAndRooms = [[NSMutableArray alloc]init];
     NSUInteger index = 0;
     
     for (NSString *speaker in speakers) {
         
         index += 1;
-        
         NSString *greeting = [NSString stringWithFormat:@"Welcome, %@! You'll be in dressing room %lu.", speaker, index];
-        
         [greetingsAndRooms addObject:greeting];
         
     }
