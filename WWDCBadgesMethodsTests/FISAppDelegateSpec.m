@@ -50,7 +50,7 @@ describe(@"FISAppDelegate", ^{
                              @"Welcome, Jean Bartik! You'll be in dressing room 8."  ];
     });
     
-    describe(@"badgeForSpeaker:", ^{
+    describe(@"badgeForSpeaker:", ^{ 
         it(@"should return a formatted badge", ^{
             expect([appDelegate badgeForSpeaker:@"Inigo Montoya"]).to.equal(@"Hello, my name is Inigo Montoya.");
         });
