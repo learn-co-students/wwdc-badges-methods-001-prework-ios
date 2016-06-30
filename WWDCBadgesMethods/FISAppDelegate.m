@@ -44,7 +44,25 @@
 }
 
 - (NSArray *)greetingsAndRoomAssignmentsForSpeakers:(NSArray *)speakers {
-    return nil;
+    
+    NSMutableArray *roomAssignments = [[NSMutableArray alloc] init];
+    
+    NSArray *peakers = @[@"Adele Goldberg",
+                         @"Edsger Dijkstra",
+                         @"Joan Clarke",
+                         @"Clarence Ellis",
+                         @"Margaret Hamilton",
+                         @"George Boole",
+                         @"Tim Berners-Lee",
+                         @"Jean Bartik"];
+    
+    for (NSUInteger i = 0; i < [peakers count]; i++) {
+        NSInteger x = i + 1;
+        NSString *speaker = peakers[i];
+        NSString *assignment = [NSString stringWithFormat:@"Welcome, %@! You'll be in dressing room %lu.", speaker, x];
+        [roomAssignments addObject:assignment];
+    }
+    return roomAssignments;
 }
 
 
