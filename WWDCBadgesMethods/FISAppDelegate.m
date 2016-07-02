@@ -35,24 +35,12 @@
     
     NSMutableArray *allSpeakers = [[NSMutableArray alloc] init];
     
-    NSMutableString *hello = [[NSMutableString alloc] init];
-    
-    for (NSUInteger i = 0; i < 8; i++) {
+    for (NSUInteger i = 0; i < [speakers count]; i++) {
         
-        if (i<7) {
-            [hello appendString:@"Hello, my name is "];
-            [hello appendString:speakers[i]];
-            [hello appendString:@"., "];
-        } else {
-            
-            [hello appendString:@"Hello, my name is "];
-            [hello appendString:speakers[i]];
-            [hello appendString:@"."];
-        }
-            
+        NSString *speakerBadge = [self badgeForSpeaker:speakers[i]];
+        [allSpeakers addObject:speakerBadge];
     }
-    
-    [allSpeakers addObject:hello];
+            
     return allSpeakers;
 }
 
@@ -60,22 +48,15 @@
 - (NSArray*) greetingsAndRoomAssignmentsForSpeakers:(NSArray*)speakers {
     
     
-    NSMutableString *helloRoomNumber = [[NSMutableString alloc] init];
+    NSMutableArray *helloRoomNumber = [[NSMutableArray alloc] init];
       
     for (NSUInteger i = 0; i < [speakers count]; i++) {
         
-        NSMutableArray *roomNum = [[NSMutableArray alloc] init];
-        [roomNum addObjectsFromArray:@[@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8"]];
+        NSUInteger roomNum = i+1;
         
+        NSString *welcomeGreeting = [NSString stringWithFormat:@"Welcome, %@! You'll be in dressing room %lu.", speakers[i],roomNum];
         
-        [helloRoomNumber appendString:@"Welcome, "];
-        [helloRoomNumber appendString:speakers[i]];
-        [helloRoomNumber appendString:@"you will be in room "];
-        [helloRoomNumber appendString:roomNum[i]];
-                                            
-        
-        NSLog(helloRoomNumber);
-        
+        [helloRoomNumber addObject: welcomeGreeting];
     }
     
     return helloRoomNumber;
