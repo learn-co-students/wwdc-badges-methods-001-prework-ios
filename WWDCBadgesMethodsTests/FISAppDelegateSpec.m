@@ -49,12 +49,12 @@ describe(@"FISAppDelegate", ^{
                              @"Welcome, Tim Berners-Lee! You'll be in dressing room 7.",
                              @"Welcome, Jean Bartik! You'll be in dressing room 8."  ];
     });
-    
-    describe(@"badgeForSpeaker:", ^{
-        it(@"should return a formatted badge", ^{
-            expect([appDelegate badgeForSpeaker:@"Inigo Montoya"]).to.equal(@"Hello, my name is Inigo Montoya.");
-        });
-    });
+//    
+//    describe(@"badgeForSpeaker:", ^{
+//        it(@"should return a formatted badge", ^{
+//            expect([appDelegate badgeForSpeaker:@"Inigo Montoya"]).to.equal(@"Hello, my name is Inigo Montoya.");
+//        });
+//    });
     
     describe(@"badgesForSpeakers:", ^{
         it(@"should return a list of badge messages",^{

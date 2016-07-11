@@ -42,7 +42,7 @@
 		72B55D7B1936C8C300E0FD8A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		72B55D7D1936C8C300E0FD8A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		72B55D7F1936C8C300E0FD8A /* WWDCBadgesMethods-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WWDCBadgesMethods-Prefix.pch"; sourceTree = "<group>"; };
-		72B55D801936C8C300E0FD8A /* FISAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FISAppDelegate.h; sourceTree = "<group>"; };
+		72B55D801936C8C300E0FD8A /* FISAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FISAppDelegate.h; path = ../../../../Desktop/FISAppDelegate.h; sourceTree = "<group>"; };
 		72B55D811936C8C300E0FD8A /* FISAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FISAppDelegate.m; sourceTree = "<group>"; };
 		72B55D831936C8C300E0FD8A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		72B55D891936C8C400E0FD8A /* WWDCBadgesMethodsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WWDCBadgesMethodsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
