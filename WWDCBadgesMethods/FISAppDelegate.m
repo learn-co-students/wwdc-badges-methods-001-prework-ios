@@ -14,11 +14,32 @@
     
     return YES;
 }
+-(NSString*)badgeForSpeaker:(NSString*)speaker
+{
+    NSString *greeting = [NSString stringWithFormat:@"Hello, my name is %@.",speaker];
+    
+    return greeting;
+}
 
-/*
- 
- * Define your methods between application:didFinishLaunchingWithOptions and the @end marker
- 
- */
+-(NSArray*)badgesForSpeakers:(NSArray*)speakers
+{
+    NSMutableArray *badges = [NSMutableArray array];
+    
+    for(NSString* speaker in speakers)
+    {
+        NSString *greeting = [NSString stringWithFormat:@"Hello, my name is %@.", speaker];
+        [badges addObject:greeting];
+    }
+    
+    return badges;
+}
+
+-(NSArray*)greetingsAndRoomAssignmentsForSpeakers:(NSArray*)speakers
+{
+    return nil;
+}
+
+
+
 
 @end
