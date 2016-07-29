@@ -18,4 +18,10 @@
  
  */
 
+- (NSString *) badgeForSpeaker: (NSString *)speaker; //return - jmeno ktere dam - typ exekuce - argument
+
+- (NSArray *) badgesForSpeakers: (NSArray *)speakers;
+
+- (NSArray *) greetingsAndRoomAssignmentsForSpeakers: (NSArray *)speakers;
+
 @end
