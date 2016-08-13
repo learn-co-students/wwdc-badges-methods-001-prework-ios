@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "8444AC5187AA5CDD1CCFA370E8295D411BB56C21",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "C17CC658D88E1A7A7E4A6150FED423C15EB51D9A" : 0,
+    "8444AC5187AA5CDD1CCFA370E8295D411BB56C21" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "4E6D6C03-2871-4642-B021-9A2DFFDC7F0F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "C17CC658D88E1A7A7E4A6150FED423C15EB51D9A" : "..",
+    "8444AC5187AA5CDD1CCFA370E8295D411BB56C21" : "wwdc-badges-methods-001-prework-ios\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "WWDCBadgesMethods",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "WWDCBadgesMethods.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:linocchio\/wwdc-badges-methods-001-prework-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8444AC5187AA5CDD1CCFA370E8295D411BB56C21"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:SwiftMission\/iOSGit.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C17CC658D88E1A7A7E4A6150FED423C15EB51D9A"
+    }
+  ]
+}
