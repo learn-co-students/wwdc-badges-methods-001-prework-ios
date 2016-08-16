@@ -56,7 +56,7 @@ describe(@"FISAppDelegate", ^{
         });
     });
     
-    describe(@"badgesForSpeakers:", ^{
+    describe(@"badgesForSpeakers:", ^{ 
         it(@"should return a list of badge messages",^{
             expect([appDelegate badgesForSpeakers:speakers]).to.equal(badges);
         });
