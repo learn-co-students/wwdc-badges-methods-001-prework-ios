@@ -12,10 +12,9 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
-/*
- 
- * Declare your custom methods in this space. Don't forget to end the statements with semicolons ";" !
- 
- */
+- (NSString *) badgeForSpeaker : (NSString *)speaker;
+- (NSString *) badgesForSpeakers: (NSArray *)speakers;
+- (NSArray *) greetingsAndRoomAssignmentsForSpeakers: (NSArray *)speakers;
+
 
 @end
