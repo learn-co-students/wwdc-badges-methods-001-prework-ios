@@ -5,7 +5,6 @@
 #import "SPTSharedExampleGroups.h"
 #import "SpectaUtility.h"
 #import "XCTest+Private.h"
-
 @interface XCTestCase (xct_allSubclasses)
 
 - (NSArray *)allSubclasses;

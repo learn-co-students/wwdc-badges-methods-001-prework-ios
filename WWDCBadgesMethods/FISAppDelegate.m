@@ -11,14 +11,60 @@
 @implementation FISAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
-    return YES;
-}
+ 
+//    NSString *speaker = @"Inigo Montoya";
+//    NSLog(@"Hello, my name is %@.", speaker);
 
+    
+
+ return YES;
+}
+         
 /*
  
  * Define your methods between application:didFinishLaunchingWithOptions and the @end marker
  
  */
+-(NSString *)badgeForSpeaker:(NSString *)speaker {
+    
+    NSString *badge = [NSString stringWithFormat:@"Hello, my name is %@.", speaker ];
+    NSLog(@"%@", badge);
+    
+    return badge;
+}
+
+-(NSArray *) badgesForSpeakers:(NSArray *)speakers {
+    
+    NSMutableArray *helloMyNameIs = [[NSMutableArray alloc] init];
+    
+    NSUInteger arrayLength = [speakers count];
+
+for (NSUInteger i = 0; i < arrayLength; i++) {
+    
+    NSUInteger index = i;
+    NSString *speaker = [speakers objectAtIndex:index];
+    NSString *helloMyNameIsSpeaker = [self badgeForSpeaker:speaker];
+    [helloMyNameIs addObject:helloMyNameIsSpeaker];
+}
+
+return helloMyNameIs;
+}
+
+-(NSArray *) greetingsAndRoomAssignmentsForSpeakers:(NSArray *)speakers {
+    
+    NSMutableArray *greetingArray = [[NSMutableArray alloc] init];
+ 
+    for (NSUInteger i = 0; i < [speakers count]; i++) {
+        
+        NSString *greeting = [NSString stringWithFormat: @"Welcome, %@! You'll be in dressing room %lu.", speakers[i], i + 1];
+        [greetingArray addObject:greeting];
+        
+        
+    }
+
+    return greetingArray;
+  
+}
+
 
 @end
