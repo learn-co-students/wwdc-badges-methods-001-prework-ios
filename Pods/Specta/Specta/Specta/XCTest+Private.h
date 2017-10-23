@@ -19,8 +19,7 @@
 
 #endif
 
-@protocol XCTestObservation <NSObject>
-@end
+
 
 @interface _XCTestDriverTestObserver : NSObject <XCTestObservation>
 
